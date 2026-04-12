@@ -234,6 +234,8 @@ main {
   display: inline-block;
   padding: 6px 16px;
   border-radius: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .menu-grid {

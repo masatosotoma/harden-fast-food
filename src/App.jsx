@@ -1,4 +1,4 @@
-const { useState, useEffect } = React;
+import React, { useState, useEffect } from 'react';
 
 const menuData = {
   chefsSpecial: {
@@ -80,7 +80,7 @@ const Header = ({ lang, setLang }) => {
     <nav className="navbar">
       <div className="container nav-content">
         <div className="brand">
-          Harden Fast Food <span>雅頓茶餐</span>
+          Ha Den Fast Food <span>雅頓茶餐</span>
         </div>
         <div className="nav-actions">
           <ul className="nav-links">
@@ -102,7 +102,7 @@ const Hero = ({ lang }) => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>{t("Harden Fast Food", "雅頓茶餐")}</h1>
+        <h1>{t("Ha Den Fast Food", "雅頓茶餐")}</h1>
         <p className="subtitle">{t("Take-out & Party Tray", "外賣及派對拼盤")}</p>
         <div className="contact-info">
           <p className="phone">📞 416-321-1997</p>
@@ -151,7 +151,7 @@ const Footer = ({ lang }) => {
         <p className="allergy-warning">⚠️ {t("Please let us know if you are allergic to peanuts.", "對花生敏感請告知。")}</p>
         <p>{t("Prices are subject to change without notice.", "價格改動不另行通知。")}</p>
         <div className="footer-bottom">
-          &copy; {new Date().getFullYear()} Harden Fast Food {t("All rights reserved.", "版權所有。")}
+          &copy; {new Date().getFullYear()} Ha Den Fast Food {t("All rights reserved.", "版權所有。")}
         </div>
       </div>
     </footer>
@@ -181,5 +181,4 @@ const App = () => {
   );
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+export default App;
